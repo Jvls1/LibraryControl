@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+    <title>Library</title>
+</head>
+<body>
+    <header id="header">
+        <h1>Library Control</h1>
+        <nav>
+            <ul>
+                <li><a href="#">New Book</a></li>
+                <li><a href="#">Borrow Book</a></li>
+                <li><a href="#">New Client</a></li>
+                <li><a href="#">Search</a></li>
+            </ul>
+    </header>
+
+    </nav>
+    <main class="container">
+        <div id="controll">
+            <h2 class="total">Total Books: <span>3</span></h2>
+            <h3 class="free">Free Books: <span>1</span></h3>
+            <h3 class="borrowed">Borrowed Books: <span>2</span></h3>
+        </div>
+        <table id="books">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Author</th>
+                    <th>Gender</th>
+                    <th>Status</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>The Hobbit</td>
+                    <td>J.R.R Tolkien</td>
+                    <td>Fiction</td>
+                    <td>Borrowed</td>
+                    <td><img src="./assets/edit.svg" alt="edit book"></td>
+
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>The Lord of The Rings</td>
+                    <td>J.R.R Tolkien</td>
+                    <td>Fiction</td>
+                    <td>Free</td>
+                    <td><img src="./assets/edit.svg" alt="edit book"></td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Harry Potter</td>
+                    <td>J.K Rowling</td>
+                    <td>Fiction</td>
+                    <td>Borrowed</td>
+                    <td><img src="./assets/edit.svg" alt="edit book"></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="modal-overlay">
+            <div id="modal">
+                <div class="form">
+                    <form action="">
+                    
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>Library Control - Jvls1</footer>
+</body>
+</html>

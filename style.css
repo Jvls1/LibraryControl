@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+/* all page */
+body {
+    background-color: #ffffe0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.container {
+    width: min(90vw, 800px);
+    margin: auto;
+}
+
+/* header */
+#header {
+    background: #f5812b;
+    text-align: center;
+    color: #fff;
+}
+
+#header h1{
+    padding: 2rem;
+}
+
+#header nav ul{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding: 1rem 2rem;
+}
+
+#header nav ul a{
+    color: white;
+}
+
+
+/* stock controll */
+#controll {
+    margin: 2.5rem 0 2.5rem 0;
+}
+
+#controll .total {
+    font-size: 2rem;
+}
+
+#controll .free {
+    color: green;
+}
+
+#controll .borrowed {
+    color: #FA201B;
+}
+
+/* books/table */
+#books {
+    width: 100%;
+    border-spacing: 0 0.5rem;
+    color: #F5812B;
+}
+
+table th {
+    background: #f5812b;
+    color: white;
+    padding: 1rem 2rem;
+}
+table th:first-child,
+table th:first-child {
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+
+table th:last-child,
+table th:last-child {
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+
+/* modal */
+.modal-overlay {
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.7);
+
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 1;
+    visibility: visible;
+    z-index: 999;
+}
