@@ -94,7 +94,7 @@ table th:last-child {
 }
 
 /* button */
-.button {
+button {
     width: 100%;
     height: 50px;
 

@@ -13,15 +13,46 @@ const Modal = {
     }
 }
 
-const btn = document.querySelector(".send")
+const book = {
+    id: 001,
+    name: 'The Hobbit',
+    author: 'J.R.R. Tolkien',
+    gender: 'Fantasy',
+    status: 'Free',
+}
 
-btn.addEventListener('click', function (e) {
+const DOM = {
+    booksContainer: document.querySelector('#data-table tbody'),
 
-    e.preventDefault()
+    addBook(book, index) {
+        const tr = document.createElement('tr')
+        tr.innerHTML = DOM.innerHTMLBook(book)
+        tr.dataset.index = index
 
-    const book = document.querySelector('#new-book')
+        DOM.booksContainer.appendChild(tr)
+    },
+    innerHTMLBook(book, index) {
+        const html = `
+        <td class="id">${book.id}</td>
+        <td class="name">${book.name}</td>
+        <td class="author">${book.author}</td>
+        <td class="gender">${book.gender}</td>
+        <td class="status">${book.status}</td>
+        <td><img src="./assets/edit.svg" alt="edit book"></td>
+        `
+    }
+}
 
-    const value = book.value
+const Form = {
+    name: document.querySelector('input#name'),
+    author: document.querySelector('input#author'),
+    gender: document.querySelector('input#gender'),
 
-    console.log(value)
-})
+    getValues () {
+        return {
+            name: Form.name.value,
+            author: Form.author.value,
+            gender: Form.gender.value
+        }
+    }
+}

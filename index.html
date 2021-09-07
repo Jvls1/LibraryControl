@@ -40,31 +40,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>001</td>
-                    <td>The Hobbit</td>
-                    <td>J.R.R Tolkien</td>
-                    <td>Fiction</td>
-                    <td>Borrowed</td>
-                    <td><img src="./assets/edit.svg" alt="edit book"></td>
-
-                </tr>
-                <tr>
-                    <td>002</td>
-                    <td>The Lord of The Rings</td>
-                    <td>J.R.R Tolkien</td>
-                    <td>Fiction</td>
-                    <td>Free</td>
-                    <td><img src="./assets/edit.svg" alt="edit book"></td>
-                </tr>
-                <tr>
-                    <td>003</td>
-                    <td>Harry Potter</td>
-                    <td>J.K Rowling</td>
-                    <td>Fiction</td>
-                    <td>Borrowed</td>
-                    <td><img src="./assets/edit.svg" alt="edit book"></td>
-                </tr>
+                
             </tbody>
         </table>
     </main>
@@ -74,29 +50,35 @@
                 <h2>New Book</h2>
                 <form action="">
                     <div class="input-group">
-                        <label class="sr-only" for="new-book">Book Name</label>
-                        <input type="text"
-                        id="new-book"
-                        name="new-book"
-                        placeholder="Book Name">
+                        <label class="sr-only" for="name">Book Name</label>
+                        <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Book Name"
+                        >
                     </div>
                     <div class="input-group">
                         <label class="sr-only" for="author">Author</label>
-                        <input type="text"
+                        <input
+                        type="text"
                         id="author"
                         name="author"
-                        placeholder="Author">
+                        placeholder="Author"
+                        >
                     </div>
                     <div class="input-group">
                         <label class="sr-only" for="gender">Gender</label>
-                        <input type="text"
+                        <input
+                        type="text"
                         id="gender"
                         name="gender"
-                        placeholder="Gender">
+                        placeholder="Gender"
+                        >
                     </div>
                     <div class="input-group actions">
                         <a href="#" onclick="Modal.toggleNewBook()" class="button cancel">Cancel</a>
-                        <input class="button" class="send" type="submit" value="Save">
+                        <button>Save</button>
                     </div>
                 </form>
             </div>
@@ -153,7 +135,7 @@
                     <div class="input-group">
                         <label class="sr-only" for="name">Name</label>
                         <input type="text"
-                        id="name"
+                        id="clientName"
                         name="name"
                         placeholder="Name">
                     </div>
